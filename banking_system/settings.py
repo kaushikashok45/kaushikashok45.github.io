@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-okoh(&*op1i(6xll2gxpz(k6oofbu0c(a_9=kebl%@#13bcpnc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -135,7 +135,7 @@ DATABASES['default'].update(db_from_env)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = BASE_DIR /home/static 
+STATIC_ROOT = BASE_DIR/home/static/ 
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
